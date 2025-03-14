@@ -34,14 +34,14 @@ var moveUpTouch = 0;
 document.addEventListener("keydown", moveUp);
 
 // При нажатии на экран телефона
-cvs.addEventListener('touchstart', (event) => {
+btn.addEventListener('touchstart', (event) => {
   moveUp();
   moveUpTouch = setInterval(function(){
     moveUp();
   },120);
 })
 
-cvs.addEventListener('touchend', (event) => {
+btn.addEventListener('touchend', (event) => {
   clearInterval(moveUpTouch);
 })
 
