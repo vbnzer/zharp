@@ -42,9 +42,10 @@ body {
     border-radius: 25px;
     font-size: 18px;
     font-weight: 700;
+    height: 70px;
+    width: 250px;
     color: #FFFFFF;
     cursor: pointer;
-    padding: 30px 130px;
     text-align: center;
     transition: all ease-out 0.2s;
     border: none;
@@ -53,6 +54,7 @@ body {
     border: solid 0px;
     align-self: center;
     margin-bottom: 70px;
+    display: none;
 }
 
 #button:hover {
@@ -72,5 +74,9 @@ body {
 
     #canvas {
         margin-bottom: 12px;
+    }
+
+    #button {
+        display: block;
     }
 }

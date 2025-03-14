@@ -35,15 +35,16 @@ document.addEventListener("keydown", moveUp);
 
 // При нажатии на экран телефона
 btn.addEventListener('touchstart', (event) => {
+  btn.innerHTML = '';
   moveUp();
   moveUpTouch = setInterval(function(){
     moveUp();
   },120);
-})
+});
 
 btn.addEventListener('touchend', (event) => {
   clearInterval(moveUpTouch);
-})
+});
 
 function moveUp() {
 yPos -= 25;
